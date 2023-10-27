@@ -1,13 +1,13 @@
 # Monet-CycleGAN
 
-#1. Problem description
+# 1. Problem description
 
 The Kaggle competition titled "I’m Something of a Painter Myself" challenged participants to utilize Generative Adversarial Networks (GANs) to create art in a manner reminiscent of renowned painters like Claude Monet.
 
 The primary goal was to employ GANs to transfer the style of Claude Monet’s artworks to a set of photographs of natural scenes. Participants were required to create a generator model within a GAN algorithm to recreate Monet's distinctive style from a photo, while a discriminator model within the GAN was tasked with distinguishing between real and generated images.
 
 
-#2. Technology utilized - CycleGAN
+# 2. Technology utilized - CycleGAN
 
 CycleGAN is designed for image-to-image translation tasks without paired training data. Its architecture comprises two generators and two discriminators, forming a cycle-consistent adversarial network.
 Unlike traditional GANs, CycleGAN can work with unpaired training data, which means you don't need to have exact correspondences between the style images and content images. This feature could be particularly useful in this competition where obtaining paired data might be challenging.
@@ -43,6 +43,6 @@ It ensures that if an image from domain X is translated to domain Y by G and the
 The adversarial loss ensures that the generated images are indistinguishable from real images in the target domain.
 
 
-#3. Results
+# 3. Results
 
 ![image](https://github.com/AlisherAmirbek/Monet-CycleGAN/assets/124807619/5f17e296-0252-4361-a460-768c44d837fc)
